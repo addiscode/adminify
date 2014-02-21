@@ -1,0 +1,122 @@
+configuration:
+	title: DBCW | admin
+	header: DBCW Admin Control Panel
+	tables:
+		stuffs:
+			icon: /public/images/icons/users.png
+			tip: Stuffs
+			permission:insert|update|delete
+			fields:
+				full_name:
+					friendly-name: Full name
+					showOnList: true
+					list-length: 100
+					widget: textfield
+					enableHtml: false
+					validation: required
+				
+				academics:
+					friendly-name: Academics
+					showOnList: true
+					list-length: 100
+					widget: textfield
+					enableHtml: true
+					validation: required
+				summary:
+					friendly-name: Summary
+					widget: textarea
+					enableHtml: false
+					validation: 
+				img:
+					friendly-name: Image
+					widget: file
+					showOnList: false
+					validation: 
+					config:
+						upload_path: './../public/public/img'
+						url_path: "img"
+						allowed_types: gif|jpg|jpeg|png
+						overwrite: true
+						max_width: 500
+						max_height: 400
+						max_size: 1024
+						
+		pages:
+			icon: /public/images/icons/pages.png
+			tip: Manage your pages
+			permission:update
+			fields:
+				title:
+					friendly-name: Title
+					showOnList: true
+					list-length: 100
+					widget: textfield
+					enableHtml: false
+					validation: required
+				
+				content:
+					friendly-name: Content
+					showOnList: true
+					list-length: 100
+					widget: richtext
+					enableHtml: true
+					validation:
+		
+		testemonials:
+			icon: /public/images/icons/testemonials.png
+			tip: Testemonials
+			permission:insert|update|delete
+			fields:
+				personality:
+					friendly-name: Personality
+					showOnList: true
+					list-length: 100
+					widget: textfield
+					enableHtml: false
+					validation: required
+				
+				quote:
+					friendly-name: Quote
+					showOnList: true
+					list-length: 100
+					widget: textarea
+					enableHtml: true
+					validation: required
+		
+		projects:
+			icon: /public/images/icons/projects.png
+			tip: Manage your projects
+			permission:insert|update|delete
+			fields:
+				title:
+					friendly-name: Title
+					showOnList: true
+					list-length: 100
+					widget: textfield
+					enableHtml: false
+					validation: required
+				
+				summary:
+					friendly-name: Summary
+					showOnList: true
+					list-length: 100
+					widget: textarea
+					enableHtml: true
+					validation:
+				img:
+					friendly-name: Image
+					widget: file
+					showOnList: false
+					validation: 
+					config:
+						upload_path: './../public/public/img'
+						url_path: "img"
+						allowed_types: gif|jpg|jpeg|png
+						overwrite: true
+						max_width: 300
+						max_height: 400
+						max_size: 1024
+		
+		
+		
+		
